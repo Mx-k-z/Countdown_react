@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: url('./background.jpg');
+  background-position: center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(126, 231, 250, 0.4);
+  background-image: linear-gradient(240deg, rgba(19, 134, 155, 0.35) 30%, rgba(63, 124, 57, 0.6) 65%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  z-index: -1;
+}
+
+.header {
+  margin-left: 1rem;
+  color: white;
+  margin-top: -10rem;
+}
+.header .header-text {
+  font-size: 50px;
+}
+.header .header-date {
+  font-size: 20px;
+}
+
+.container-countdown {
+  color: white;
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.elem {
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.elem .text {
+  font-size: 1.4rem;
+}
+.elem .numbers-hours, .elem .numbers-seconds, .elem .numbers-minutes, .elem .numbers-days {
+  border-radius: 5px;
+  box-shadow: 0px 15px 15px rgba(27, 88, 57, 0.5);
+  margin: 0 1rem;
+  padding: 50px;
+  font-size: 50px;
+  background-color: rgba(164, 196, 180, 0.5);
+}
+.elem .numbers-days {
+  border-radius: 50px 5px 5px 50px;
+  box-shadow: -5px 15px 20px rgba(27, 88, 57, 0.5);
+}
+.elem .numbers-minutes {
+  border-radius: 5px;
+}
+.elem .numbers-seconds {
+  border-radius: 5px 50px 50px 5px;
+  box-shadow: 5px 15px 20px rgba(27, 88, 57, 0.5);
 }

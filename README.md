@@ -1,7 +1,7 @@
 Countdown React App
 
 Technologies i used:
--HTML;
+-HTML; \n
 -SCSS;
 -React JS;
 -Webpack;

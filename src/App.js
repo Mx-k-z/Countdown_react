@@ -7,9 +7,9 @@ function App() {
   const [today] = useState({date: new Date()})
   const [timeLeft, setTimeLeft] = useState({
     days: null,
-    hour: null,
-    min: null,
-    sec: null
+    hours: null,
+    minutes: null,
+    seconds: null
   })
   
   function time(param) {

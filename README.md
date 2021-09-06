@@ -1,7 +1,3 @@
 Countdown React App
 
-Technologies i used:
--HTML;
--SCSS;
--React JS;
--Webpack;
+![](https://github.com/Mx-k-z/Countdown_react/blob/master/Screenshot/Countdown.png)

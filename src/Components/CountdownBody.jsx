@@ -1,23 +1,31 @@
 import React from 'react'
 
-const CountdownBody = ({days, hours, minutes, seconds}) => {
+const CountdownBody = ({ days, hours, minutes, seconds }) => {
 	return (
-		<div className="container-countdown">
-			<div className="elem">
-				<div className="numbers-days" id="days">{days}</div>
-				<span className="text">Days</span>
+		<div className='main'>
+			<div className='main__elem'>
+				<div className='main__days' id='days'>
+					{days}
+				</div>
+				<span className='main__text'>Days</span>
 			</div>
-			<div className="elem">
-				<div className="numbers-hours" id="hours">{hours}</div>
-				<span className="text">Hours</span>
+			<div className='main__elem'>
+				<div className='main__hours' id='hours'>
+					{hours}
+				</div>
+				<span className='main__text'>Hours</span>
 			</div>
-			<div className="elem">
-				<div className="numbers-minutes" id="minutes">{minutes}</div>
-				<span className="text">Minutes</span>
+			<div className='main__elem'>
+				<div className='main__minutes' id='minutes'>
+					{minutes}
+				</div>
+				<span className='main__text'>Minutes</span>
 			</div>
-			<div className="elem">
-				<div className="numbers-seconds" id="seconds">{seconds}</div>
-				<span className="text">Seconds</span>
+			<div className='main__elem'>
+				<div className='main__seconds' id='seconds'>
+					{seconds}
+				</div>
+				<span className='main__text'>Seconds</span>
 			</div>
 		</div>
 	)
